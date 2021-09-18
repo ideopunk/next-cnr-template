@@ -32,3 +32,19 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-button {
 	display: none;
 }
+
+.test {
+	border: 1px solid red;
+}
+
+.path {
+	stroke-dasharray: 100;
+	stroke-dashoffset: 100;
+	animation: dash 3s linear infinite forwards;
+}
+
+@keyframes dash {
+	to {
+		stroke-dashoffset: -100;
+	}
+}
