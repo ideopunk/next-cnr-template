@@ -2,3 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+	overflow: overlay;
+	overflow-x: hidden;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	scrollbar-width: thin; /* "auto" or "thin" */
+	scrollbar-color: grey white; /* scroll thumb and track */
+}
+
+/* total width */
+body::-webkit-scrollbar {
+	background-color: "green";
+	width: 6px;
+}
+
+/* background of the scrollbar except button or resizer */
+body::-webkit-scrollbar-track {
+	background-color: "green";
+}
+
+/* scrollbar itself */
+body::-webkit-scrollbar-thumb {
+	background-color: #babac0;
+	border-radius: 16px;
+	border: 0px solid #fff;
+}
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {
+	display: none;
+}
