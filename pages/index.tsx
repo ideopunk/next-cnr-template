@@ -1,6 +1,4 @@
-import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
@@ -35,40 +33,16 @@ export default function Home() {
 
 			<div className="absolute w-screen h-screen flex justify-center items-center z-0">
 				<svg width={svgWidth + 20} height={svgHeight + 20}>
-					<path
-						d={`M 10 10 L ${svgWidth - 10} 10 `}
-						stroke="black"
-						strokeWidth={2}
+					<rect
+						x={10}
+						y={10}
+						width={svgWidth}
+						height={svgHeight}
 						fill="none"
+						stroke="red"
+						strokeWidth={3}
+						strokeLinecap="round"
 						className="path"
-						clipPath="url(#hide-top)"
-					/>
-
-					<path
-						d={`m ${svgWidth - 10} 10 L ${svgWidth - 10} ${svgHeight - 10}`}
-						stroke="black"
-						strokeWidth={2}
-						fill="none"
-						className="path"
-						clipPath="url(#hide-top)"
-					/>
-
-					<path
-						d={`M ${svgWidth - 10} ${svgHeight - 10} L 10 ${svgHeight - 10}  `}
-						stroke="black"
-						strokeWidth={2}
-						fill="none"
-						className="path"
-						clipPath="url(#hide-top)"
-					/>
-
-					<path
-						d={`m 10 ${svgHeight - 10} L 10 10`}
-						stroke="black"
-						strokeWidth={2}
-						fill="none"
-						className="path"
-						clipPath="url(#hide-top)"
 					/>
 				</svg>
 			</div>
@@ -87,10 +61,12 @@ export default function Home() {
 					</a>
 				</h1>
 
-				<p className="text-xl mb-4">
+				<p className="text-xl mb-4 font-medium">
 					Get started by editing <code>pages/index.js</code>
 				</p>
-				<p className="text-xl">Add content to the og:url and canonical link tags.</p>
+				<p className="text-xl font-medium">
+					Add content to the og:url and canonical link tags.
+				</p>
 			</main>
 		</div>
 	);
