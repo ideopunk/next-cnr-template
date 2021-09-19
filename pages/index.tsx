@@ -33,7 +33,7 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<div className="absolute w-screen h-screen flex justify-center items-center">
+			<div className="absolute w-screen h-screen flex justify-center items-center z-0">
 				<svg width={svgWidth + 20} height={svgHeight + 20}>
 					<path
 						d={`M 10 10 L ${svgWidth - 10} 10 `}
@@ -72,16 +72,25 @@ export default function Home() {
 					/>
 				</svg>
 			</div>
-			<main>
-				<h1>
-					Welcome to <a href="https://nextjs.org">Next.js</a>, using{" "}
-					<a href="???">CNR!</a>
+			<main className="z-10">
+				<h1 className="text-2xl font-bold mb-4">
+					Welcome to{" "}
+					<a
+						className="text-blue-700 hover:text-purple-900 transition-colors"
+						href="https://nextjs.org"
+					>
+						Next.js
+					</a>
+					, using{" "}
+					<a className="text-blue-700 hover:text-purple-900 transition-colors" href="???">
+						next-cnr-template!
+					</a>
 				</h1>
 
-				<p>
+				<p className="text-xl mb-4">
 					Get started by editing <code>pages/index.js</code>
 				</p>
-				<p>Add content to the og:url and canonical link tags.</p>
+				<p className="text-xl">Add content to the og:url and canonical link tags.</p>
 			</main>
 		</div>
 	);
