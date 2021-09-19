@@ -56,7 +56,7 @@ export default function Home() {
 						Next.js
 					</a>
 					, using{" "}
-					<a className="text-blue-700 hover:text-purple-900 transition-colors" href="???">
+					<a className="text-blue-700 hover:text-purple-900 transition-colors" href="https://github.com/ideopunk/next-cnr-template">
 						next-cnr-template!
 					</a>
 				</h1>

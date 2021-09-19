@@ -20,9 +20,9 @@ These are features I find myself using on every Next project. They might change 
 Run the following command to create a new project with this Starter:
 
 ```bash
-yarn create next-app my-app -e https://github.com/ideopunk/next-cnr-starter
+yarn create next-app my-app -e https://github.com/ideopunk/next-cnr-template
 # or
-npx create-next-app my-app -e https://github.com/ideopunk/next-cnr-starter
+npx create-next-app my-app -e https://github.com/ideopunk/next-cnr-template
 ```
 
 Once the project and dependencies are finished installing, you can navigate to that directory and start up the development server with:
