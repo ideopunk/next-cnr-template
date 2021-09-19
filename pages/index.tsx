@@ -39,7 +39,7 @@ export default function Home() {
 						width={svgWidth}
 						height={svgHeight}
 						fill="none"
-						stroke="red"
+						stroke="blue"
 						strokeWidth={3}
 						strokeLinecap="round"
 						className="path"
@@ -56,7 +56,10 @@ export default function Home() {
 						Next.js
 					</a>
 					, using{" "}
-					<a className="text-blue-700 hover:text-purple-900 transition-colors" href="https://github.com/ideopunk/next-cnr-template">
+					<a
+						className="text-blue-700 hover:text-purple-900 transition-colors"
+						href="https://github.com/ideopunk/next-cnr-template"
+					>
 						next-cnr-template!
 					</a>
 				</h1>
