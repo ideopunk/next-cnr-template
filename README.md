@@ -5,8 +5,9 @@ This is a [Next.js](https://nextjs.org/) starter.
 It features
 
 -   Typescript
--   Tailwind in `jit` mode.
+-   Tailwind
 -   Meta tags in the `_document` file.
+-   Password protection for development branches. Add PASSWORD_PROTECT to your environment variables. 
 -   Other defaults:
     -   A robots.txt file
     -   A thin scrollbar
