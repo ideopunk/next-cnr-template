@@ -6,8 +6,8 @@ It features
 
 -   Typescript
 -   Tailwind
--   Meta tags in the `_document` file.
--   Password protection for development branches. Add PASSWORD_PROTECT to your environment variables. 
+-   Next SEO
+-   Password protection for development branches. Add ENTRYPOINT_PASSWORD to your environment variables. 
 -   Other defaults:
     -   A robots.txt file
     -   A thin scrollbar
