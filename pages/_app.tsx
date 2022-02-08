@@ -13,4 +13,4 @@ function MyApp({ Component, pageProps }: AppProps) {
 		</>
 	);
 }
-export default process.env.PASSWORD_PROTECT ? withPasswordProtect(MyApp) : MyApp;
+export default process.env.NODE_ENV !== "production" ? withPasswordProtect(MyApp) : MyApp;
