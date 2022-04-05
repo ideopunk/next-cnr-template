@@ -3,10 +3,11 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import { withPasswordProtect } from "@storyofams/next-password-protect";
 import { DefaultSeo } from "next-seo";
+import { ThemeProvider } from 'next-themes';
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
-		<>
+		<ThemeProvider attribute="class">
 			<DefaultSeo
 				openGraph={{
 					type: "website",
@@ -30,7 +31,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 			/>
 
 			<Component {...pageProps} />
-		</>
+		</ThemeProvider>
 	);
 }
 export default process.env.NODE_ENV !== "production" ? withPasswordProtect(MyApp) : MyApp;

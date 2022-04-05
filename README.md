@@ -7,6 +7,7 @@ It features
 -   Typescript
 -   Tailwind
 -   Next SEO
+-   Dark Mode
 -   Password protection for development branches. Add ENTRYPOINT_PASSWORD to your environment variables. 
 -   Other defaults:
     -   A robots.txt file
@@ -21,7 +22,7 @@ These are features I find myself using on every Next project. They might change 
 Run the following command to create a new project with this Starter:
 
 ```bash
-yarn create next-app my-app -e https://github.com/ideopunk/next-cnr-template
+yarn create-next-app my-app -e https://github.com/ideopunk/next-cnr-template
 # or
 npx create-next-app my-app -e https://github.com/ideopunk/next-cnr-template
 ```
